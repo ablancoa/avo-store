@@ -1,0 +1,26 @@
+{
+  "name": "aguacate-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Alexander Blanco",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@formspree/react": "^2.4.1",
+    "@mui/material": "^5.11.4",
+    "@react-pdf/renderer": "^3.0.2",
+    "jsconfig.json": "^2.3.3",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-pdf": "^6.2.2",
+    "sass": "^1.57.1"
+  },
+  "description": ""
+}

@@ -1,0 +1,21 @@
+.cartItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.cartItem:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.cartItem {
+  img {
+    margin-right: 0.5rem;
+  }
+
+  div {
+    display: flex;
+  }
+}

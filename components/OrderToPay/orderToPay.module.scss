@@ -1,0 +1,32 @@
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid gray;
+
+  div {
+    font-weight: bold;
+  }
+
+}
+
+.userDataForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  input {
+    height: 1.5rem;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  button {
+    margin-top: 1rem;
+    background-color: #81c784;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+  }
+}

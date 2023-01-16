@@ -1,0 +1,42 @@
+.userDataForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  input {
+    height: 1.5rem;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    background-color: #81c784;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  textarea {
+    min-height: 180px;
+    max-width: 99%;
+  }
+}
+
+.return {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .buttonReturn {
+    background-color: #81c784;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+  }
+}

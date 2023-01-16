@@ -1,0 +1,42 @@
+@use "sass:math";
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-box-shadow: 10px 9px 20px -7px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 10px 9px 20px -7px rgba(0, 0, 0, 0.26);
+  box-shadow: 10px 9px 20px -7px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  border-radius: 6px;
+  width: 30%;
+  min-width: 200px;
+  min-height: 300px;
+
+  .productInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h3 {
+      margin: 0 5px 0 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    figure {
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.product:hover {
+  transition: 0.5s;
+  translate: 0 -5px;
+}

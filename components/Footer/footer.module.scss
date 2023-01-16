@@ -1,0 +1,21 @@
+.footerContainer {
+  margin-top: 1rem;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+
+  .contactContainer {
+    width: 50%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .socialMedia {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  -webkit-box-shadow: 0px 5px 9px -5px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 5px 9px -5px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 5px 9px -5px rgba(0, 0, 0, 0.31);
+  font-family: 'Roboto';
+  height: 5rem;
+  padding: 0 1rem
+}
+
+.image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.image:hover {
+  background-color: rgb(241, 241, 241);
+}
