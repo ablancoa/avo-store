@@ -1,6 +1,5 @@
 import React from 'react';
 import { Document, Page, Text, View, Image, StyleSheet } from '@react-pdf/renderer';
-import { height } from '@mui/system';
 
 const styles = StyleSheet.create({
   body: {
