@@ -41,7 +41,7 @@ const DownloadOrder = ({ cart, total, dataUser }) => {
               loading ? 'Loading document...' : 'Download now!'
             }
           </PDFDownloadLink>
-          <Link href='/cart'>Regresar a la pagina principal</Link>
+          <Link href='/'><Button>Regresar a la pagina principal</Button></Link>
 
         </Box>
       </Modal>
