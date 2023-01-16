@@ -19,3 +19,24 @@
   }
 
 }
+
+@media (max-width: 600px) {
+  .footerContainer {
+    flex-direction: column;
+    width: 100%;
+
+    .contactContainer {
+      width: 100%;
+    }
+  }
+
+
+
+  .contactWithMe {
+    width: 100%;
+  }
+
+  .p {
+    width: 100%;
+  }
+}

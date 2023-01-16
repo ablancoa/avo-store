@@ -68,3 +68,11 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 600px) {
+  .productContainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+  }
+}

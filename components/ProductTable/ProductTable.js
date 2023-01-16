@@ -44,7 +44,7 @@ export default function ProductTable({shape, hardiness, taste}) {
   
 
   return (
-    <TableContainer component={Paper} sx={{ minWidth: 600 }}>
+    <TableContainer component={Paper} sx={{ minWidth: 300 }}>
       <Table sx={{ minWidth: 600 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -55,7 +55,7 @@ export default function ProductTable({shape, hardiness, taste}) {
         <TableBody >
           {rows.map((row) => (
             <StyledTableRow key={row.attribute} >
-              <StyledTableCell component="th" scope="row" width={300}>
+              <StyledTableCell component="th" scope="row">
                 {row.attribute}
               </StyledTableCell>
               <StyledTableCell align="left">{row.value}</StyledTableCell>
