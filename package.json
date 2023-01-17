@@ -15,12 +15,15 @@
     "@formspree/react": "^2.4.1",
     "@mui/material": "^5.11.4",
     "@react-pdf/renderer": "^3.0.2",
+    "isomorphic-unfetch": "^4.0.2",
     "jsconfig.json": "^2.3.3",
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pdf": "^6.2.2",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "sharp": "^0.31.3",
+    "unfetch": "^5.0.0"
   },
   "description": ""
 }

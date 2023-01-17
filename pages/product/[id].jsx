@@ -5,8 +5,36 @@ import Image from 'next/image';
 import { TYPES } from 'actions/shopping';
 import style from './id.module.scss';
 import ProductTable from '@components/ProductTable/ProductTable';
+import { GetStaticProps } from 'next';
+import fetch from 'isomorphic-unfetch'
 
-function ProductItem() {
+export const getStaticPaths = async () => {
+  const response = await fetch('https://platzi-avo.vercel.app/api/avo')
+  console.log(response)
+  const { data: productList } = await response.json()
+
+  const paths = productList.map(({ id }) => ({
+    params: { id }
+  }))
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps = async ({ params }) => {
+  const response = await fetch(`https://platzi-avo.vercel.app/api/avo/${params.id}`)
+  const product = await response.json()
+
+  return {
+    props: {
+      product
+    }
+  }
+}
+
+function ProductItem({ product }) {
   const { state, dispatch, data, loading, error } = useContext(AppContext);
   const router = useRouter();
   const quantityPorduct = useRef(null)
@@ -19,7 +47,7 @@ function ProductItem() {
     }
   };
 
-  const product = data.find(item => item.id === router.query.id)
+  // const product = data.find(item => item.id === router.query.id)
 
   if (loading) return "Loading ...";
   if (error) return `Error ${error}`;

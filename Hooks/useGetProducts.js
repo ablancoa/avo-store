@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import fetch from 'isomorphic-unfetch'
 
 const useGetProducts = (BASE_URL = '', error_msg = 'An error has ocurred getting the data') => {
 
@@ -11,12 +12,11 @@ const useGetProducts = (BASE_URL = '', error_msg = 'An error has ocurred getting
           setLoading(true);
           //Pedimos los datos a la api
           try {
-              const response = await window.fetch(BASE_URL);
+              const response = await fetch(BASE_URL);
               if (!response.ok) {
                   throw new Error(`Http status ${response.status}`);
               }
               const data = await response.json();
-            //   console.log(data);
               setFetchData(data.data);
           } catch (error) {//Si hay un error ...
               console.error(error.message);
