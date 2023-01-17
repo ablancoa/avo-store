@@ -4,7 +4,7 @@ import useGetProducts from './useGetProducts.js';
 
 
 const useInitialCartState = () => {
-  const BASE_URL = 'https://platzi-avo.vercel.app/api/avo';
+  const BASE_URL = 'https://avo-store-phi.vercel.app/api/avo';
   const { data, loading, error } = useGetProducts(BASE_URL);
   
   const [state, dispatch] = useReducer(shoppingReducer, initialState);

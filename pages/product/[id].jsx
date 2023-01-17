@@ -9,7 +9,7 @@ import { GetStaticProps } from 'next';
 import fetch from 'isomorphic-unfetch'
 
 export const getStaticPaths = async () => {
-  const response = await fetch('https://platzi-avo.vercel.app/api/avo')
+  const response = await fetch('https://avo-store-phi.vercel.app/api/avo')
   console.log(response)
   const { data: productList } = await response.json()
 
@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  const response = await fetch(`https://platzi-avo.vercel.app/api/avo/${params.id}`)
+  const response = await fetch(`https://avo-store-phi.vercel.app/api/avo/${params.id}`)
   const product = await response.json()
 
   return {
