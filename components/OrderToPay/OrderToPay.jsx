@@ -48,7 +48,7 @@ function OrderToPay({ total, cart }) {
         <label htmlFor="email">Email to contact</label>
         <input id="email" type="text" name="email" required />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <button type="submit" disabled={state.submitting} >Pagar</button>
+        <button type="submit" disabled={!total ? true : false}>Pagar</button>
         <textarea id="message" name="message" type="text" readOnly hidden value={
           cart.length > 0 ?
             cart.map((item, index) => {
