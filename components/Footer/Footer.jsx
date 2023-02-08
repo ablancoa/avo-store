@@ -23,7 +23,7 @@ const Footer = () => {
         <div className={style.socialMedia}>
           <Link href='https://www.instagram.com/blancoamador95/' ><Image src={instagramIcon} alt='Instagram' width={25} height={25} /></Link>
           <Link href='https://www.facebook.com/alexander.blanco.7777/'><Image src={facebookIcon} alt='Instagram' width={25} height={25} /></Link>
-          <Link href='https://github.com/ablancoa'><Image src={githubIcon} alt='Instagram' width={25} height={25} /></Link>
+          <Link href='https://github.com/ablancoa/avo-store/'><Image src={githubIcon} alt='Instagram' width={25} height={25} /></Link>
           <Link href='https://www.linkedin.com/in/alexander-blanco-amador/'><Image src={linkedlinIcon} alt='Instagram' width={25} height={25} /></Link>
         </div>
       </div>
